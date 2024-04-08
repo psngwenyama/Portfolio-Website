@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince | Portfolio Website</title>
+
+    <!--fontawesome style-->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.css">
+
+   <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+        :root {
+            --yellow: #063970;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: black;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 10vh;
+            position: relative;
+            padding: 0 2rem;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(254, 251, 248);
+        }
+        .navbar{
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo img{
+            width: 35px;
+            height: 35px;
+        }
+        .navbar .links{
+            display: flex;
+            gap: 2rem;
+            float: right;
+        }
+        .navbar .links li a{
+            color: rgb(254, 251, 248);
+        }
+        .navbar .links li a:hover{
+            color: rgb(148, 84, 20);
+        }
+
+        .container-3{
+        background-color: #333;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+        .bio{
+            text-align: center;
+            justify-content: center;
+        }
+        .bio h3{
+            color: gray;
+            padding-bottom: 20px;
+            padding-top: 100px;
+        }
+        .bio p{
+            color: gray;
+            font-size: 14px;
+            padding: 0 100px;
+            padding-bottom: 20px;
+        }
+        .btn {
+            padding: 0.7rem 2rem;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 1rem;
+            font-size: 2rem;
+            border-radius: 5rem;
+        }
+        .btn:hover{
+        background: #fff;
+        color: #333;
+        }
+        .image-2 img{
+            border-radius: 20px;
+            margin-left: 200px;
+        }
+
+
+        .education {
+            min-height: 70vh;
+            padding: 1rem;
+            background-color: #333;
+        }
+        .heading {
+            text-align: center;
+            margin: 0 6rem;
+            font-size: 4rem;
+            padding: 1rem;
+            border-bottom: .1rem solid #fff4;
+            color: #fff;
+        }
+        .heading span {
+            color: var(--yellow);
+        }
+        .education .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            padding-left: 3rem;
+        }
+        .education .box-container .box {
+            width: 27rem;
+            margin: 4rem 1rem;
+            padding-left: 4rem;
+            border-left: .2rem solid #fff;
+            position: relative;
+        }
+        .education .box-container .box i {
+            position: absolute;
+            top: -1.5rem;
+            left: -2.5rem;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            line-height: 5rem;
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            background: var(--yellow);
+        }
+        .experience {
+            min-height: 70vh;
+            padding: 1rem;
+            background-color: #333;
+        }
+        .heading {
+            text-align: center;
+            margin: 0 6rem;
+            font-size: 4rem;
+            padding: 1rem;
+            border-bottom: .1rem solid #fff4;
+            color: #fff;
+        }
+        .experience .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            padding-left: 3rem;
+        }
+        .experience .box-container .box {
+            width: 70rem;
+            margin: 4rem 1rem;
+            padding-left: 4rem;
+            border-left: .2rem solid #fff;
+            position: relative;
+        }
+        .experience .box-container .box i {
+            position: absolute;
+            top: -1.5rem;
+            left: -2.5rem;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            line-height: 5rem;
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            background: var(--yellow);
+        }
+
+        footer{
+        background-color: rgb(145, 211, 197);
+        margin-top: -5px;
+
+        }
+        footer .footer-details{
+        text-align: center;
+        background-color: rgb(145, 211, 197);
+        padding-top: 75px;
+        padding-bottom: 25px;
+        color: rgb(102, 173, 157);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .address{
+        text-align: center;
+        }
+        .quicklinks{
+        text-align: center;
+        gap: 20px;
+        }
+        .quicklinks h3{
+        color: gray;
+        font-size: 14px;
+        padding-bottom: 10px;
+        }
+        .quicklinks li {
+        list-style: none;
+        padding: 10px 0;
+        }
+        .quicklinks li a{
+        gap: 50px;
+        }
+        .footer-map iframe{
+        height: 200px;
+        }
+
+
+
+
+   </style>
+
+</head>
+
+<body>
+    <header class="navigationBar">
+        <div class="navbar">
+            <div class="logo"><a href="./index.html"><img src="./assets/img/html5.png" alt=""></a></div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./contact-me.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </header> 
+
+    <div class="container-3">
+
+        <div class="bio">
+            <h3>Prince Sthembiso Ngwenyama</h3>
+            <p>
+                As A Recent Graduate Of Tshwane University Of Technology’s IT Diploma Program In Multimedia Specialization. 
+                I Am Currently Seeking For Opportunities In Front-End Development Roles Or Full Stack Development Roles. 
+                I Am Passion About Developing Responsive Web Applications And Plan To Make Myself, My Experiences And
+                 My Education As Useful To The Organization/Company And Also Keep Clients Happy. I Have Over 1 Year 
+                 Experience Working As Junior Web Developer And Word-Press Developer At Square Root Creatives. 
+                 I Have Developed A Strong Research Skills Through My Undergraduate Studies And I Am Comfortable 
+                 In Coding With HTML, CSS, JavaScript And Java.
+            </p>
+            <a href="./assets/cv/Prince CV.doc"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+        </div>  
+        <div class="image-2">
+            <img src="./assets/img/IMG_20221118_005617_560.jpg" alt="">
+        </div>  
+
+    </div>
+    
+    <section class="education" id="education">
+
+        <h1 class="heading"> My <span>Education</span> </h1>
+        
+        <div class="box-container">
+        
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>Diploma in IT (Multimedia)</h3>
+                <p>
+                    Major in web development and game programming
+                </p>
+            </div>
+        
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2018</span>
+                <h3>National Certificate in Engineering N2</h3>
+                <p> Engineering Science N2<br>
+                    Mathematics N2<br>
+                    Electrical Trade Theory N2<br>
+                    Industrial Electronics N2
+                </p>
+            </div>
+        
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2010</span>
+                <h3>Grade 12</h3>
+                <p> English FAL<br>
+                    Siswati Home language<br>
+                    Mathematics<br>
+                    Life Orientation<br>
+                    Life Sciences<br>
+                    Agricultural Sciences<br>
+                    Physical Science
+                </p>
+            </div>
+        
+        </div>
+    
+    </section>
+
+    <section class="experience" id="experience">
+
+        <h1 class="heading">  <span>My</span> Experience </h1>
+        
+        <div class="box-container">
+        
+            <div class="box">
+                <i class="fas fa-briefcase"></i>
+                <span>May 2021 - Mar 2022 </span>
+                <h3>Square Root Creatives | <span>Web Developer</span></h3>
+               <p>  Designing and building the website front-end<br>
+                    Designing and managing the website back-end including database and server integration<br>
+                    Creating the website architecture<br>
+                    Assisting the web development team with all aspects of website and application design<br>
+                    Assisting with the testing and maintenance of backend and front-end applications<br>
+                    Using user feedback to identify and correct problems with a client's website<br>
+               </p> 
+
+            </div>
+        
+        </div>
+    
+    </section>
+
+
+    <footer>
+        <div class="footer-details">
+            <div class="address">
+                <a href="https://www.linkedin.com/in/prince-sthembiso-ngwenyama/"><i class="fa-brands fa-linkedin"></i>   LinkedIn Profile</a></br></br>
+                <a href="https://github.com/psngwenyama"><i class="fa-brands fa-github"></i>   GitHub Profile</a>
+            </div>
+            <div class="quicklinks">
+                <h3>Quick Links</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./contact-me.html">Contact Me</a></li>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14374.718478070803!2d28.327429367716036!3d-25.748106451838826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955e52c11f695b%3A0xe7b77d0459ef2fa0!2s456%20Bush%20Rd%2C%20Willow%20Park%20Manor%2C%20Pretoria%2C%200184!5e0!3m2!1sen!2sza!4v1676385643539!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+
+</html>

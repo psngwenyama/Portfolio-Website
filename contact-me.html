@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince | Portfolio Website</title>
+
+    <!--fontawesome style-->
+    <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+        :root {
+            --yellow: #063970;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        header{
+        background-color: black;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 10vh;
+        position: relative;
+        padding: 0 2rem;
+        }
+        li{
+        list-style: none;
+        }
+        a{
+        text-decoration: none;
+        color: rgb(254, 251, 248);
+        }
+        .navbar{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+        .navbar .logo img{
+        width: 35px;
+        height: 35px;
+        }
+        .navbar .links{
+        display: flex;
+        gap: 2rem;
+        float: right;
+        }
+        .navbar .links li a{
+        color: rgb(254, 251, 248);
+        }
+        .navbar .links li a:hover{
+        color: rgb(148, 84, 20);
+        }
+
+        .main-contact-me{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        }
+        .contact-details{
+        text-align: center;
+        }
+        .information{
+        padding: 20px 0;
+        }
+        .icon{
+        width: 28px;
+        margin-right: 0.7rem;
+        }
+        .social-media {
+        padding: 2rem 0 0 0;
+        }
+
+        .social-media p {
+        color: #333;
+        }
+        .social-icons {
+        display: flex;
+        margin-top: 0.5rem;
+        margin-left: 315px;
+        }
+
+        .social-icons a {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #1abc9c, #149279);
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 0.5rem;
+        transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+        transform: scale(1.05);
+        }
+        .main-contact-form{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin-left: 200px;
+        width: 50%;
+        text-align: center;
+        }
+        .main-contact-form h3{
+        padding-bottom: 20px;
+        }
+        input[type=text],select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+        input[type=email]{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+        input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <header class="navigationBar">
+        <div class="navbar">
+            <div class="logo"><a href="./index.html"><img src="./assets/img/html5.png" alt=""></a></div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./contact-me.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </header> 
+
+    <div class="main-contact-me">
+        <div class="main-contact-form">
+            <h3 id="">Send Me a Message</h3>
+            <form action="https://formspree.io/f/xknarzbq" method="POST">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Name">
+                <label for="fname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Surname">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <div class="contact-details">
+          <h3>Contact details</h3>
+          <div class="information">
+            <img src="./assets/icons/location.png" class="icon" alt="" />
+            <p>456 Bush Road, Pretoria 0184</p>
+          </div>
+          <div class="information">
+            <img src="./assets/icons/email.png"class="icon" alt="" />
+            <p>sthembiso.ngwenyama@gmail.cm</p>
+          </div>
+          <div class="information">
+            <img src="./assets/icons/phone.png" class="icon" alt="" />
+            <p>076 733 9334 | 065 139 7718</p>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-details">
+            <div class="address">
+                <a href="https://www.linkedin.com/in/prince-sthembiso-ngwenyama/"><i class="fa-brands fa-linkedin"></i>   LinkedIn Profile</a></br></br>
+                <a href="https://github.com/psngwenyama"><i class="fa-brands fa-github"></i>   GitHub Profile</a>
+            </div>
+            <div class="quicklinks">
+                <h3>Quick Links</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./contact-me.html">Contact Me</a></li>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14374.718478070803!2d28.327429367716036!3d-25.748106451838826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955e52c11f695b%3A0xe7b77d0459ef2fa0!2s456%20Bush%20Rd%2C%20Willow%20Park%20Manor%2C%20Pretoria%2C%200184!5e0!3m2!1sen!2sza!4v1676385643539!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
